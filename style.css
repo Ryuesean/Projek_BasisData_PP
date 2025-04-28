@@ -484,6 +484,50 @@ section {
     margin-bottom: 5px;
 }
 
+.creator-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    display: block;
+    border: 3px solid #0057a5;
+}
+
+.credit-item {
+    text-align: center;
+    padding: 25px;
+}
+
+.motto {
+    font-style: italic;
+    color: #666;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.credit-item .social-media {
+    margin-top: 15px;
+}
+
+.credit-item .social-media a {
+    color: #0057a5;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.credit-item .social-media a:hover {
+    color: #ffcc00;
+}
+
+.credit-item .social-media i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
 /* Footer */
 .footer {
     background-color: #333;
