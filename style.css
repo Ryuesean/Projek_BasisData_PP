@@ -310,19 +310,20 @@ section {
 /* Teachers Section */
 .teachers {
     background-color: white;
+    padding: 60px 0;
 }
 
-.teacher-cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .teacher-card {
-    width: 300px;
-    padding: 20px;
     background-color: white;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
@@ -353,6 +354,9 @@ section {
     font-style: italic;
     color: #666;
     margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 85px; /* Untuk menjaga alignment */
 }
 
 .social-media {
@@ -371,6 +375,31 @@ section {
 .social-media a:hover {
     color: #ffcc00;
     transform: scale(1.2);
+}
+
+/* Responsive design for teachers grid */
+@media (max-width: 1200px) {
+    .teacher-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .teacher-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .teacher-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .teacher-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Articles Section */
