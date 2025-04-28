@@ -87,7 +87,7 @@ section {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(0, 87, 165, 0.8), rgba(0, 87, 165, 0.8)), url('hero-bg.jpg');
+    background-image: linear-gradient(rgba(0, 88, 165, 0.357), rgba(0, 88, 165, 0.341)), url('bg.png');
     color: white;
     min-height: 100vh;
     width: 100%;
@@ -125,6 +125,7 @@ section {
     display: flex;
     align-items: center;
     gap: 40px;
+    justify-content: space-between;
 }
 
 .welcome-text {
@@ -140,7 +141,8 @@ section {
 }
 
 .welcome-image img {
-    width: 100%;
+    margin-left: 10%;
+    width: 80%;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
