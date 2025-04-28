@@ -1,148 +1,245 @@
-<!-- CEK KOMEN KAGA JADI JADI INI -->
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Sekolah</title>
+    <title>Pendidikan Pancasila</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section haloo -->
+    <!-- Header Section -->
     <header class="header">
         <div class="logo">
-            <img src="/api/placeholder/50/50" alt="Logo PP">
-            <h1>Sekolah PP</h1>
+            <img src="Logo PP.png" alt="Logo PP" onerror="this.src='https://via.placeholder.com/50x50?text=PP'">
+            <h1>Pendidikan Pancasila</h1>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span>☰</span>
         </div>
         <nav>
             <ul class="nav-menu">
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Pendahuluan</a></li>
-                <li><a href="#">Materi</a></li>
-                <li><a href="#">Guru</a></li>
-                <li><a href="#">Credit</a></li>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#pendahuluan">Pendahuluan</a></li>
+                <li><a href="#materi">Materi</a></li>
+                <li><a href="#guru">Guru</a></li>
+                <li><a href="#manfaat">Manfaat di Dunia Kerja</a></li>
+                <li><a href="#credit">Credit</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="beranda">
         <div class="hero-content">
             <h2>PENDIDIKAN PANCASILA</h2>
-            <p>Wujudkan Sekolah Online, Jarak Tak Halangi Ilmu</p>
-            <a href="#" class="btn">Pelajari Lebih</a>
+            <p>Membangun Karakter Bangsa Melalui Nilai-nilai Pancasila</p>
         </div>
     </section>
 
     <!-- Welcome Section -->
-    <section class="welcome">
+    <section class="welcome" id="pendahuluan">
         <div class="container">
             <h2>PENDAHULUAN</h2>
             <div class="welcome-content">
                 <div class="welcome-text">
-                    <p>Pendidikan Pancasila adalah...</p>
-                    <p>Dengan fitur yang lengkap dan tampilan yang menarik, website ini memudahkan komunikasi antara sekolah, siswa, orangtua, dan masyarakat luas. Semua informasi dapat diakses dengan mudah dan cepat.</p>
+                    <p>Pendidikan Pancasila adalah mata pelajaran yang bertujuan untuk membentuk karakter peserta didik sebagai warga negara yang memiliki rasa kebangsaan dan cinta tanah air yang dijiwai oleh nilai-nilai Pancasila dan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.</p>
+                    <p>Melalui pendidikan Pancasila, peserta didik diharapkan mampu menjadi warga negara yang demokratis dan bertanggung jawab, serta menjadi pribadi yang mampu mengembangkan jati diri kebangsaannya.</p>
                 </div>
                 <div class="welcome-image">
-                    <img src="/api/placeholder/400/300" alt="Aktivitas Siswa">
+                    <img src="Logo PP.png" alt="Garuda Pancasila" onerror="this.src='https://via.placeholder.com/400x300?text=Garuda+Pancasila'">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- (DISINI ENAKNYA DITARUH APA? APA HAPUS AJA..) --> 
-    <section class="stats">
-        <div class="container">
-            <div class="stat-box">
-                <h3>3,000+</h3>
-                <p>Siswa</p>
-            </div>
-            <div class="stat-box">
-                <h3>100</h3>
-                <p>Guru</p>
-            </div>
-            <div class="stat-box">
-                <h3>500+</h3>
-                <p>Alumni</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Materi (NANTI BISA DI KLIK APA YA MATERINYA PINDAH KE HALAMAN LAIN GITU, TIAP BAB GASIE) -->
-    <section class="features">
+    <!-- Materi Section dengan Dropdown -->
+    <section class="features" id="materi">
         <div class="container">
             <h2>MATERI PENDIDIKAN PANCASILA</h2>
-            <div class="feature-boxes">
-                <div class="feature-box">
-                    <h3>PPDB</h3>
-                    <p>Pendaftaran siswa baru online</p>
+            
+            <div class="materi-container">
+                <!-- Materi 1 -->
+                <div class="materi-box">
+                    <div class="materi-header" onclick="toggleMateri(this)">
+                        <h3>1. Pancasila sebagai Dasar Negara</h3>
+                        <span class="materi-icon">▼</span>
+                    </div>
+                    <div class="materi-content">
+                        <p>Pancasila sebagai dasar negara merupakan landasan ideologi Republik Indonesia yang terdiri dari lima sila.</p>
+                        <ul>
+                            <li>Sejarah perumusan Pancasila</li>
+                            <li>Kedudukan Pancasila sebagai dasar negara</li>
+                            <li>Implementasi nilai-nilai Pancasila dalam kehidupan bernegara</li>
+                            <li>Pancasila sebagai sistem filsafat</li>
+                            <li>Tantangan implementasi Pancasila di era globalisasi</li>
+                        </ul>
+                        <a href="#" class="btn-small">Baca Selengkapnya</a>
+                    </div>
                 </div>
-                <div class="feature-box">
-                    <h3>Artikel</h3>
-                    <p>Berita dan kegiatan sekolah</p>
+                
+                <!-- Materi 2 -->
+                <div class="materi-box">
+                    <div class="materi-header" onclick="toggleMateri(this)">
+                        <h3>2. UUD 1945 sebagai Landasan Konstitusional</h3>
+                        <span class="materi-icon">▼</span>
+                    </div>
+                    <div class="materi-content">
+                        <p>UUD 1945 merupakan hukum dasar tertulis yang menjadi landasan konstitusional negara Indonesia.</p>
+                        <ul>
+                            <li>Sejarah penyusunan UUD 1945</li>
+                            <li>Amandemen UUD 1945</li>
+                            <li>Pokok-pokok pikiran dalam Pembukaan UUD 1945</li>
+                            <li>Sistem ketatanegaraan Indonesia</li>
+                            <li>Hierarki peraturan perundang-undangan di Indonesia</li>
+                        </ul>
+                        <a href="#" class="btn-small">Baca Selengkapnya</a>
+                    </div>
                 </div>
-                <div class="feature-box">
-                    <h3>Gallery</h3>
-                    <p>Foto dan video kegiatan</p>
+                
+                <!-- Materi 3 -->
+                <div class="materi-box">
+                    <div class="materi-header" onclick="toggleMateri(this)">
+                        <h3>3. Hak Asasi Manusia (HAM)</h3>
+                        <span class="materi-icon">▼</span>
+                    </div>
+                    <div class="materi-content">
+                        <p>Konsep dan implementasi HAM dalam konteks Indonesia berdasarkan nilai-nilai Pancasila.</p>
+                        <ul>
+                            <li>Pengertian dan konsep HAM</li>
+                            <li>HAM dalam perspektif Pancasila</li>
+                            <li>Perlindungan HAM di Indonesia</li>
+                            <li>Kasus-kasus pelanggaran HAM</li>
+                            <li>Instrumen HAM di tingkat nasional dan internasional</li>
+                        </ul>
+                        <a href="#" class="btn-small">Baca Selengkapnya</a>
+                    </div>
+                </div>
+
+                <!-- Materi 4 -->
+                <div class="materi-box">
+                    <div class="materi-header" onclick="toggleMateri(this)">
+                        <h3>4. Demokrasi Pancasila</h3>
+                        <span class="materi-icon">▼</span>
+                    </div>
+                    <div class="materi-content">
+                        <p>Sistem demokrasi yang didasarkan pada nilai-nilai Pancasila sebagai ideologi bangsa Indonesia.</p>
+                        <ul>
+                            <li>Pengertian dan karakteristik demokrasi Pancasila</li>
+                            <li>Perbedaan demokrasi Pancasila dengan demokrasi lainnya</li>
+                            <li>Implementasi demokrasi di Indonesia</li>
+                            <li>Perkembangan demokrasi di Indonesia</li>
+                            <li>Tantangan demokrasi di era digital</li>
+                        </ul>
+                        <a href="#" class="btn-small">Baca Selengkapnya</a>
+                    </div>
+                </div>
+
+                <!-- Materi 5 -->
+                <div class="materi-box">
+                    <div class="materi-header" onclick="toggleMateri(this)">
+                        <h3>5. Integrasi Nasional</h3>
+                        <span class="materi-icon">▼</span>
+                    </div>
+                    <div class="materi-content">
+                        <p>Konsep integrasi nasional dalam konteks keanekaragaman budaya di Indonesia.</p>
+                        <ul>
+                            <li>Pengertian integrasi nasional</li>
+                            <li>Faktor-faktor pendorong dan penghambat integrasi nasional</li>
+                            <li>Bhinneka Tunggal Ika sebagai semboyan pemersatu</li>
+                            <li>Peran Pancasila dalam mewujudkan integrasi nasional</li>
+                            <li>Strategi mempertahankan integrasi nasional</li>
+                        </ul>
+                        <a href="#" class="btn-small">Baca Selengkapnya</a>
+                    </div>
+                </div>
+
+                <!-- Materi 6 -->
+                <div class="materi-box">
+                    <div class="materi-header" onclick="toggleMateri(this)">
+                        <h3>6. Ketahanan Nasional</h3>
+                        <span class="materi-icon">▼</span>
+                    </div>
+                    <div class="materi-content">
+                        <p>Konsep ketahanan nasional dalam menghadapi berbagai ancaman, tantangan, hambatan, dan gangguan.</p>
+                        <ul>
+                            <li>Pengertian dan ruang lingkup ketahanan nasional</li>
+                            <li>Astagatra: aspek ideologi, politik, ekonomi, sosial budaya, pertahanan, dan keamanan</li>
+                            <li>Peran warga negara dalam memperkuat ketahanan nasional</li>
+                            <li>Tantangan ketahanan nasional di era globalisasi</li>
+                            <li>Ketahanan nasional dalam menghadapi pandemi global</li>
+                        </ul>
+                        <a href="#" class="btn-small">Baca Selengkapnya</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Teachers Section -->
-    <section class="teachers">
+    <section class="teachers" id="guru">
         <div class="container">
             <h2>GURU PENDIDIKAN PANCASILA</h2>
             <div class="teacher-cards">
                 <div class="teacher-card">
-                    <img src="/api/placeholder/200/200" alt="Guru">
-                    <h3>John Doe</h3>
-                    <p>Kepala Sekolah</p>
-                </div>
-                <div class="teacher-card">
-                    <img src="/api/placeholder/200/200" alt="Guru">
-                    <h3>Jane Smith</h3>
-                    <p>Guru Matematika</p>
-                </div>
-                <div class="teacher-card">
-                    <img src="/api/placeholder/200/200" alt="Guru">
-                    <h3>Ahmad Ibrahim</h3>
-                    <p>Guru Sains</p>
-                </div>
-                <div class="teacher-card">
-                    <img src="/api/placeholder/200/200" alt="Guru">
-                    <h3>Sarah Johnson</h3>
-                    <p>Guru Bahasa</p>
-                </div>
-                <div class="teacher-card">
-                    <img src="/api/placeholder/200/200" alt="Guru">
-                    <h3>Michael Brown</h3>
-                    <p>Guru Olahraga</p>
+                    <img src="guru-pp.jpg" alt="Guru Pendidikan Pancasila" onerror="this.src='https://via.placeholder.com/150?text=Guru+PP'">
+                    <h3>Nama Guru</h3>
+                    <p class="quote">"Pancasila bukan hanya untuk dihafal, tetapi untuk diamalkan dalam kehidupan sehari-hari."</p>
+                    <div class="social-media">
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Credit foto kita le Sehjjction -->
-    <section class="articles">
+    <!-- Manfaat di Dunia Kerja Section -->
+    <section class="stats" id="manfaat">
+        <h2>Manfaat Pendidikan Pancasila di Dunia Kerja</h2>
+        <div class="container">
+            <div class="stat-box">
+                <h3>Integritas dan Etika Kerja</h3>
+                <p>Membangun kepribadian yang jujur, bertanggung jawab, dan beretika dalam lingkungan profesional. Nilai-nilai Pancasila seperti keadilan dan kemanusiaan menjadi fondasi dalam mengambil keputusan etis di dunia kerja.</p>
+            </div>
+            <div class="stat-box">
+                <h3>Kemampuan Kepemimpinan</h3>
+                <p>Mengembangkan jiwa kepemimpinan yang demokratis, menghargai keberagaman, dan mampu bekerja dalam tim multikultural. Pemahaman tentang musyawarah mufakat membantu dalam pengambilan keputusan yang inklusif.</p>
+            </div>
+            <div class="stat-box">
+                <h3>Adaptasi Global</h3>
+                <p>Mempersiapkan lulusan dengan pemahaman identitas nasional yang kuat namun tetap mampu berinteraksi secara global. Ketahanan terhadap pengaruh negatif globalisasi sambil tetap terbuka pada perkembangan dunia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credit Section -->
+    <section class="credit" id="credit">
         <div class="container">
             <h2>CREDIT</h2>
-            <div class="article-grid">
-                <div class="article-item">
-                    <img src="/api/placeholder/350/200" alt="Artikel Sekolah">
-                    <h3>Upacara Bendera</h3>
-                    <p>Kegiatan rutin penumbuh patriotisme</p>
+            <div class="credit-content">
+                <div class="credit-item">
+                    <h3>Disusun oleh</h3>
+                    <p>Nama Anda</p>
+                    <p>NIS/NISN</p>
+                    <p>Kelas</p>
                 </div>
-                <div class="article-item">
-                    <img src="/api/placeholder/350/200" alt="Artikel Sekolah">
-                    <h3>Kegiatan Ekstrakulikuler</h3>
-                    <p>Pengembangan bakat dan minat siswa</p>
+                <div class="credit-item">
+                    <h3>Pembimbing</h3>
+                    <p>Nama Guru Pendidikan Pancasila</p>
                 </div>
-                <div class="article-item">
-                    <img src="/api/placeholder/350/200" alt="Artikel Sekolah">
-                    <h3>Prestasi Siswa</h3>
-                    <p>Pencapaian membanggakan sekolah</p>
+                <div class="credit-item">
+                    <h3>Sumber Materi</h3>
+                    <ul>
+                        <li>Buku Pendidikan Pancasila (Kementerian Pendidikan)</li>
+                        <li>UUD 1945</li>
+                        <li>Berbagai sumber daring terpercaya</li>
+                    </ul>
+                </div>
+                <div class="credit-item">
+                    <h3>Teknologi</h3>
+                    <p>HTML5, CSS3, JavaScript</p>
                 </div>
             </div>
         </div>
@@ -153,30 +250,64 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="/api/placeholder/100/100" alt="Logo Matara">
-                    <h3>Template Sekolah</h3>
-                    <p>Your Online Promotion Solution</p>
+                    <img src="Logo PP.png" alt="Logo PP" onerror="this.src='https://via.placeholder.com/100?text=PP'">
+                    <h3>Pendidikan Pancasila</h3>
+                    <p>Membangun Karakter Bangsa</p>
                 </div>
                 <div class="footer-links">
                     <h3>Link Cepat</h3>
                     <ul>
-                        <li><a href="#">Beranda</a></li>
-                        <li><a href="#">Tentang Kami</a></li>
-                        <li><a href="#">Guru</a></li>
-                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#pendahuluan">Pendahuluan</a></li>
+                        <li><a href="#materi">Materi</a></li>
+                        <li><a href="#guru">Guru</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h3>Kontak Kami</h3>
                     <p>Jl. Pendidikan No. 123</p>
-                    <p>Email: info@sekolahpp.ac.id</p>
+                    <p>Email: info@pendidikanpancasila.ac.id</p>
                     <p>Telepon: (021) 12345678</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Sekolah PP. All Rights Reserved.</p>
+                <p>&copy; 2025 Pendidikan Pancasila. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Fungsi untuk toggle menu pada tampilan mobile
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Fungsi untuk toggle materi dropdown
+        function toggleMateri(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('.materi-icon');
+            
+            if (content.classList.contains('active')) {
+                content.classList.remove('active');
+                icon.classList.remove('active');
+            } else {
+                content.classList.add('active');
+                icon.classList.add('active');
+            }
+        }
+
+        // Smooth scrolling untuk navigasi
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
