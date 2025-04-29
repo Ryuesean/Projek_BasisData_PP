@@ -125,7 +125,7 @@ section {
 
 /* Hero Section - Tetap Asli */
 .hero {
-    background-image: linear-gradient(rgba(0, 88, 165, 0.357), rgba(0, 88, 165, 0.341)), url('bg.png');
+    background-image:url('bg.png');
     color: white;
     min-height: 100vh;
     width: 100%;
