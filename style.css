@@ -13,6 +13,7 @@ body {
     color: #333;
     line-height: 1.6;
     padding: 0vh;
+    height: auto;
 }
 
 .container {
@@ -95,7 +96,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-position: center bottom;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -640,6 +641,7 @@ section {
         width: 100%;
         flex-direction: column;
         margin-top: 15px;
+
     }
     
     .nav-menu.active {
