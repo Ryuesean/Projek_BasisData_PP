@@ -214,7 +214,7 @@ section {
 }
 
 .materi-content.active {
-    max-height: 1000px;
+    max-height: 1000px !important; /* Ubah dari nilai sebelumnya */
     padding: 20px;
 }
 
