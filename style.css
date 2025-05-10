@@ -240,9 +240,38 @@ section {
     transform: rotate(180deg);
 }
 
+.btn-image-link {
+    display: inline-block;
+    width: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}
+
+.btn-image-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.btn-image-link img {
+    width: 100%;
+    display: block;
+}
+
+.btn-caption {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    background-color: #f8f8f8;
+    font-size: 14px;
+}
+
 .btn-small {
     display: inline-block;
-    background-color: #104B7F;
     color: white;
     padding: 8px 16px;
     border-radius: 4px;
@@ -253,7 +282,57 @@ section {
 }
 
 .btn-small:hover {
-    background-color: #0d3f6a;
+    transform: scale(1.03);
+}
+
+.video-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.youtube-thumbnail-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 213px;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.youtube-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  pointer-events: none; /* biar klik tetap ke link, bukan icon */
+}
+
+
+.youtube-thumbnail {
+    width: 213px;
+    margin-left: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.youtube-thumbnail:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Stats Section */
