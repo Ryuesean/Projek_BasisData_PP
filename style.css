@@ -290,6 +290,7 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     text-align: center;
+    
 }
 .youtube-thumbnail-wrapper {
   position: relative;
@@ -298,10 +299,16 @@ section {
   max-width: 213px;
   margin-top: 20px;
   border-radius: 8px;
+  margin-left: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.youtube-thumbnail-wrapper:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
 .youtube-thumb {
   display: block;
   width: 100%;
@@ -328,11 +335,6 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: transform 0.3s;
-}
-
-.youtube-thumbnail:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Stats Section */
