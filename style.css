@@ -272,18 +272,20 @@ section {
 
 .btn-small {
     display: inline-block;
-    color: white;
+    background-color: rgb(95, 162, 251); /* Warna latar belakang biru */
+    color: white; /* Warna teks putih */
     padding: 8px 16px;
     border-radius: 4px;
     text-decoration: none;
     font-size: 14px;
     transition: 0.3s;
     margin-top: 15px;
-}
+  }
 
-.btn-small:hover {
+  .btn-small:hover {
     transform: scale(1.03);
-}
+    background-color: rgb(75, 117, 233); /* Warna biru yang sedikit lebih gelap saat hover */
+  }
 
 .video-box {
     background-color: #fff;
@@ -342,7 +344,7 @@ section {
     background-color: #104B7F;
     color: white;
     padding: 40px 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.03'%3E%3Cpath d='M15 0l15 8.66v17.32L15 34.64 0 25.98V8.66L15 0z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .stats h2{
@@ -382,6 +384,55 @@ section {
 .stat-box p {
     font-size: 16px;
     text-align: justify;
+}
+
+/* Manfaat Dunia Kerja - Memperbesar Space */
+.manfaat-dunia-kerja {
+    padding: 60px 0 80px; /* Memperbesar padding bawah */
+}
+
+.manfaat-dunia-kerja .container {
+    max-width: 1300px; /* Memperlebar container khusus untuk bagian ini */
+}
+
+.manfaat-box {
+    padding: 30px;  /* Padding lebih besar */
+    margin-bottom: 40px; /* Margin bawah lebih besar */
+    background-color: rgba(255, 255, 255, 0.15); /* Sedikit lebih terang */
+    border-radius: 12px; /* Border radius lebih besar */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* Shadow lebih besar */
+    transition: 0.4s;
+}
+
+.manfaat-box:hover {
+    transform: translateY(-8px); /* Efek hover lebih tinggi */
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.manfaat-box h3 {
+    font-size: 28px; /* Ukuran font judul lebih besar */
+    margin-bottom: 20px; /* Margin bawah lebih besar */
+    padding-bottom: 15px; /* Padding bawah lebih besar */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Garis pembatas */
+}
+
+.manfaat-box p {
+    font-size: 17px; /* Ukuran teks lebih besar */
+    line-height: 1.8; /* Line height lebih besar untuk keterbacaan */
+    margin-bottom: 15px; /* Jarak antar paragraf */
+    padding: 0 10px; /* Padding samping */
+}
+
+.manfaat-box ul {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+.manfaat-box li {
+    margin-bottom: 12px;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 /* Features Section */
