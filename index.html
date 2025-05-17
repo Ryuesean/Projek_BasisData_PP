@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Header Section -->
     <header class="header">
         <div class="logo">
-            <img src="Logo_PP.png" alt="Logo_PP" >
+            <img src="Logo_PP.png" alt="Logo_PP">
             <h1>Pendidikan Pancasila</h1>
         </div>
         <div class="menu-toggle" onclick="toggleMenu()">
@@ -72,171 +73,201 @@
         </div>
     </section>
 
-<!-- Materi PP Section -->
-<section class="features" id="materi-pp">
-    <div class="container">
-        <h2>MATERI PENDIDIKAN PANCASILA</h2>
-        
-        <div class="materi-container">
-            <!-- Kelas 10 -->
-            <div class="materi-box">
-                <div class="materi-header" onclick="toggleMateri(this)">
-                    <h3>KELAS 10</h3>
-                    <span class="materi-icon">▼</span>
-                </div>
-                <div class="materi-content">
-                    <div class="ebook-section">
-                        <h4>PENDIDIKAN PANCASILA KELAS 10 Kurikulum Merdeka</h4>
-                         <a href="https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Pendidikan-Pancasila-BS-KLS-X.pdf" class="btn-small" target="_blank">Baca E-Book</a>
-                        <p>DAFTAR ISI:</p>
-                        <ul>
-                            <li>BAB 1: PANCASILA</li>
-
-                            <div class="material-links">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="https://img.youtube.com/vi/OJi2Pq024UA/hqdefault.jpg" alt="Video Materi">
-                                        </div>
-                                        <div class="flip-card-back">
+    <!-- Materi PP Section -->
+    <section class="features" id="materi-pp">
+        <div class="container">
+            <h2>MATERI PENDIDIKAN PANCASILA</h2>
+            
+            <div class="materi-container">
+                <!-- Kelas 10 -->
+                <div class="materi-box">
+                    <div class="materi-header" onclick="toggleMateri(this)">
+                        <h3>KELAS 10</h3>
+                        <span class="materi-icon">▼</span>
+                    </div>
+                    <div class="materi-content">
+                        <div class="ebook-section">
+                            <h4>PENDIDIKAN PANCASILA KELAS 10 Kurikulum Merdeka</h4>
+                            <a href="https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Pendidikan-Pancasila-BS-KLS-X.pdf" class="btn-small" target="_blank">Baca E-Book</a>
+                            <p>DAFTAR ISI:</p>
+                            <ul>
+                                <li>BAB 1: PANCASILA</li>
+                                <li>BAB 2: DEMOKRASI BERDASARKAN UUD NRI TAHUN 1945</li>
+                                <li>BAB 3: BHINNEKA TUNGGAL IKA</li>
+                                <li>BAB 4: NEGARA KESATUAN REPUBLIK INDONESIA</li>
+                            </ul>
+                        </div>
+                            <div class="materi">
+                                <button class="toggle-sumber-btn" onclick="toggleSumberMateri(this)">Lihat Sumber Materi</button>
+                                <div class="material-links ">
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/OJi2Pq024UA/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
                                             <h4>Video Pancasila</h4>
                                             <p>Penjelasan lengkap BAB 1 tentang Pancasila.</p>
                                             <a href="https://youtu.be/OJi2Pq024UA" target="_blank">Tonton</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="cover101A.png" alt="Materi Rangkuman">
-                                        </div>
-                                        <div class="flip-card-back">
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
                                             <h4>Rangkuman BAB 1</h4>
                                             <p>Rangkuman Materi Pancasila dari ringkasanku.com</p>
                                             <a href="https://ringkasanku.com/materi-pancasila/" target="_blank">Baca</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="material-links">
-  <div class="hover-card">
-    <img src="https://img.youtube.com/vi/OJi2Pq024UA/hqdefault.jpg" alt="BAB 1">
-    <div class="hover-card-content">
-      <h4>BAB 1 – Pancasila</h4>
-      <p>Penjelasan lengkap mengenai dasar negara Indonesia.</p>
-      <a href="https://youtu.be/OJi2Pq024UA" target="_blank">Tonton Video</a>
-    </div>
-  </div>
-
-  <div class="hover-card">
-    <img src="https://img.youtube.com/vi/RVIMyYtD0Ro/hqdefault.jpg" alt="BAB 2">
-    <div class="hover-card-content">
-      <h4>BAB 2 – Norma & Keadilan</h4>
-      <p>Mengenal jenis-jenis norma dan pentingnya keadilan.</p>
-      <a href="https://youtu.be/RVIMyYtD0Ro" target="_blank">Tonton Video</a>
-    </div>
-  </div>
-
-  <div class="hover-card">
-    <img src="https://img.youtube.com/vi/4Yl7aL_BfDI/hqdefault.jpg" alt="BAB 3">
-    <div class="hover-card-content">
-      <h4>BAB 3 – Hak & Kewajiban</h4>
-      <p>Memahami hak dan kewajiban warga negara.</p>
-      <a href="https://youtu.be/4Yl7aL_BfDI" target="_blank">Tonton Video</a>
-    </div>
-  </div>
-</div>
-
-
-                            <li>BAB 2: DEMOKRASI BERDASARKAN UUD NRI TAHUN 1945</li>
-
-                            <div class="material-links">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="https://img.youtube.com/vi/YTalH_S99-U/hqdefault.jpg" alt="Video Materi">
-                                        </div>
-                                        <div class="flip-card-back">
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/YTalH_S99-U/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
                                             <h4>Video UUD NRI 1945</h4>
                                             <p>Penjelasan lengkap BAB 2 tentang UUD NRI Tahun 1945.</p>
                                             <a href="https://youtu.be/YTalH_S99-U?si=NrDqTux8QP0xLEeY" target="_blank">Tonton</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="cover101A.png" alt="Materi Rangkuman">
-                                        </div>
-                                        <div class="flip-card-back">
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
                                             <h4>Rangkuman BAB 2</h4>
                                             <p>Rangkuman Demokrasi UUD 1945 dari Portal Edukasi.</p>
                                             <a href="https://portaledukasi.org/2022/09/14/rangkuman-materi-ppkn-kelas-10-bab-2/" target="_blank">Baca</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <li>BAB 3: BHINNEKA TUNGGAL IKA</li>
-                            <div class="material-links">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="https://img.youtube.com/vi/dJQ3i7URPPY/hqdefault.jpg" alt="Video Materi">
-                                        </div>
-                                        <div class="flip-card-back">
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/dJQ3i7URPPY/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
                                             <h4>Video Materi Bhinneka Tunggal Ika</h4>
                                             <p>Penjelasan lengkap BAB 3 tentang Bhinneka Tunggal Ika</p>
                                             <a href="https://youtu.be/dJQ3i7URPPY?si=sI3cwCQxWxOxw22U" target="_blank">Tonton</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="cover101A.png" alt="Materi Rangkuman">
-                                        </div>
-                                        <div class="flip-card-back">
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
                                             <h4>Rangkuman BAB 3</h4>
                                             <p>Rangkuman Bhinneka Tunggal Ika dari Portal Edukasi</p>
                                             <a href="https://portaledukasi.org/2022/12/08/rangkuman-materi-ppkn-kelas-10-bab-3/" target="_blank">Baca</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="cover101A.png" alt="Materi Rangkuman">
-                                        </div>
-                                        <div class="flip-card-back">
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
                                             <h4>PowerPoint Materi Bhinneka Tunggal Ika</h4>
                                             <p>PowerPoint Materi Bhinneka Tunggal Ika dari slideshow</p>
                                             <a href="https://www.slideshare.net/slideshow/bab-3-bhinneka-kelas-10-fase-e-kurikulum-merdeka-subbab-b-pptx/274559992" target="_blank">Baca</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <li>BAB 4: NEGARA KESATUAN REPUBLIK INDONESIA</li>
-                            <div class="material-links">
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="https://img.youtube.com/vi/TIgBAinB3lA/hqdefault.jpg" alt="Video Materi">
-                                        </div>
-                                        <div class="flip-card-back">
-                                            <h4>Video MAteri NKRI</h4>
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/TIgBAinB3lA/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
+                                            <h4>Video Materi NKRI</h4>
                                             <p>Penjelasan lengkap BAB 4 tentang NKRI</p>
                                             <a href="https://youtu.be/TIgBAinB3lA?si=Zkl1X-ap9e5CfPfS" target="_blank">Tonton</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="flip-card">
-                                    <div class="flip-card-inner">
-                                        <div class="flip-card-front">
-                                            <img src="cover101A.png" alt="Materi Rangkuman">
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
+                                            <h4>Rangkuman BAB 4</h4>
+                                            <p>Rangkuman NKRI dari Portal Edukasi</p>
+                                            <a href="https://portaledukasi.org/2022/09/14/rangkuman-materi-ppkn-kelas-10-bab-2/" target="_blank">Baca</a>
                                         </div>
-                                        <div class="flip-card-back">
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kelas 11 -->
+                <div class="materi-box">
+                    <div class="materi-header" onclick="toggleMateri(this)">
+                        <h3>KELAS 11</h3>
+                        <span class="materi-icon">▼</span>
+                    </div>
+                    <div class="materi-content">
+                        <div class="ebook-section">
+                            <h4>Buku Paket Kelas 11</h4>
+                            <a href="https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/k13/bukusiswa/PPKn%20Kelas%20XI%20BS%20press.pdf" class="btn-small" target="_blank">Baca E-Book</a>
+                            <p>DAFTAR ISI:</p>
+                            <ul>
+                                <li>Bab 1: Menjiwai Jiwa</li>
+                                <li>Bab 2: Demokrasi Berdasarkan UUD NRI Tahun 1945</li>
+                                <li>Bab 3: Harmoni Dalam Keberagaman</li>
+                                <li>Bab 4: Menjaga Keutuhan NKRI</li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="materi">
+                                <button class="toggle-sumber-btn" onclick="toggleSumberMateri(this)">Lihat Sumber Materi</button>
+                                <div class="material-links ">
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/OJi2Pq024UA/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
+                                            <h4>Video Pancasila</h4>
+                                            <p>Penjelasan lengkap BAB 1 tentang Pancasila.</p>
+                                            <a href="https://youtu.be/OJi2Pq024UA" target="_blank">Tonton</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
+                                            <h4>Rangkuman BAB 1</h4>
+                                            <p>Rangkuman Materi Pancasila dari ringkasanku.com</p>
+                                            <a href="https://ringkasanku.com/materi-pancasila/" target="_blank">Baca</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/YTalH_S99-U/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
+                                            <h4>Video UUD NRI 1945</h4>
+                                            <p>Penjelasan lengkap BAB 2 tentang UUD NRI Tahun 1945.</p>
+                                            <a href="https://youtu.be/YTalH_S99-U?si=NrDqTux8QP0xLEeY" target="_blank">Tonton</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
+                                            <h4>Rangkuman BAB 2</h4>
+                                            <p>Rangkuman Demokrasi UUD 1945 dari Portal Edukasi.</p>
+                                            <a href="https://portaledukasi.org/2022/09/14/rangkuman-materi-ppkn-kelas-10-bab-2/" target="_blank">Baca</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/dJQ3i7URPPY/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
+                                            <h4>Video Materi Bhinneka Tunggal Ika</h4>
+                                            <p>Penjelasan lengkap BAB 3 tentang Bhinneka Tunggal Ika</p>
+                                            <a href="https://youtu.be/dJQ3i7URPPY?si=sI3cwCQxWxOxw22U" target="_blank">Tonton</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
+                                            <h4>Rangkuman BAB 3</h4>
+                                            <p>Rangkuman Bhinneka Tunggal Ika dari Portal Edukasi</p>
+                                            <a href="https://portaledukasi.org/2022/12/08/rangkuman-materi-ppkn-kelas-10-bab-3/" target="_blank">Baca</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
+                                            <h4>PowerPoint Materi Bhinneka Tunggal Ika</h4>
+                                            <p>PowerPoint Materi Bhinneka Tunggal Ika dari slideshow</p>
+                                            <a href="https://www.slideshare.net/slideshow/bab-3-bhinneka-kelas-10-fase-e-kurikulum-merdeka-subbab-b-pptx/274559992" target="_blank">Baca</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/TIgBAinB3lA/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
+                                            <h4>Video Materi NKRI</h4>
+                                            <p>Penjelasan lengkap BAB 4 tentang NKRI</p>
+                                            <a href="https://youtu.be/TIgBAinB3lA?si=Zkl1X-ap9e5CfPfS" target="_blank">Tonton</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
                                             <h4>Rangkuman BAB 4</h4>
                                             <p>Rangkuman NKRI dari Portal Edukasi</p>
                                             <a href="https://portaledukasi.org/2022/09/14/rangkuman-materi-ppkn-kelas-10-bab-2/" target="_blank">Baca</a>
@@ -244,92 +275,114 @@
                                     </div>
                                 </div>
                             </div>
-
-                        </ul>
-                       
                     </div>
                 </div>
-            </div>
-            
-            <!-- Kelas 11 -->
-            <div class="materi-box">
-                <div class="materi-header" onclick="toggleMateri(this)">
-                    <h3>KELAS 11</h3>
-                    <span class="materi-icon">▼</span>
-                </div>
-                <div class="materi-content">
-                    <div class="ebook-section">
-                        <h4>Buku Paket Kelas 11</h4>
-                        <p>DAFTAR ISI:</p>
-                        <ul>
-                            <li>Bab 1: Menjiwai Jiwa</li>
-                            <li>Bab 2: Demokrasi Berdasarkan UUD NRI Tahun 1945</li>
-                            <li>Bab 3: Harmoni Dalam Keberagaman</li>
-                            <li>Bab 4: Menjaga Keutuhan NKRI</li>
-                        </ul>
-                        <a href="https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/k13/bukusiswa/PPKn%20Kelas%20XI%20BS%20press.pdf" class="btn-small" target="_blank">Baca E-Book</a>
+                
+                <!-- Kelas 12 -->
+                <div class="materi-box">
+                    <div class="materi-header" onclick="toggleMateri(this)">
+                        <h3>KELAS 12</h3>
+                        <span class="materi-icon">▼</span>
                     </div>
-
-                    <div class="additional-materials">
-                        <h4>Materi Tambahan</h4>
-                        
-                        <!-- Materi 1 -->
-                        <div class="material-item">
-                            <h5>Demokrasi Pancasila</h5>
-                            <p>Sistem demokrasi yang didasarkan pada nilai-nilai Pancasila:</p>
+                    <div class="materi-content">
+                        <div class="ebook-section">
+                            <h4>Buku Paket Kelas 12</h4>
+                            <a href="https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Pendidikan-Pancasila-BG-KLS-XII.pdf" class="btn-small" target="_blank">Baca E-Book</a>
+                            <p>DAFTAR ISI:</p>
                             <ul>
-                                <li>Pengertian dan karakteristik demokrasi Pancasila</li>
-                                <li>Perbedaan demokrasi Pancasila dengan demokrasi lainnya</li>
-                                <li>Implementasi demokrasi di Indonesia</li>
+                                <li>Bab 1: Ber-Pancasila dalam Keseharian di Masyarakat</li>
+                                <li>Bab 2: Ber-Pancasila dalam Kehidupan Global</li>
+                                <li>Bab 3: Kesadaran Warga Negara dalam Menghadapi Kasus Pelanggaran Hak</li>
+                                <li>Bab 4: Generasi Solutif Mengatasi Pelanggaran Hak</li>
+                                <li>Bab 5: Praktik Gotong Royong dalam Kehidupan Masyarakat Indonesia</li>
+                                <li>Bab 6: Menelusur Lembaga Negara</li>
+                                <li>Bab 7: Menjadi Pelopor Pemilih Pemula dalam Demokrasi Indonesia</li>
                             </ul>
-                            <a href="#" class="btn-small">Baca Selengkapnya</a>
+                            
                         </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Kelas 12 -->
-            <div class="materi-box">
-                <div class="materi-header" onclick="toggleMateri(this)">
-                    <h3>KELAS 12</h3>
-                    <span class="materi-icon">▼</span>
-                </div>
-                <div class="materi-content">
-                    <div class="ebook-section">
-                        <h4>Buku Paket Kelas 12</h4>
-                        <p>DAFTAR ISI:</p>
-                        <ul>
-                            <li>Bab 1: Ber-Pancasila dalam Keseharian di Masyarakat</li>
-                            <li>Bab 2: Ber-Pancasila dalam Kehidupan Global</li>
-                            <li>Bab 3: Kesadaran Warga Negara dalam Menghadapi Kasus Pelanggaran Hak</li>
-                            <li>Bab 4: Generasi Solutif Mengatasi Pelanggaran Hak</li>
-                            <li>Bab 5: Praktik Gotong Royong dalam Kehidupan Masyarakat Indonesia</li>
-                            <li>Bab 6: Menelusur Lembaga Negara</li>
-                            <li>Bab 7: Menjadi Pelopor Pemilih Pemula dalam Demokrasi Indonesia</li>
-                        </ul>
-                        <a href="https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Pendidikan-Pancasila-BG-KLS-XII.pdf" class="btn-small" target="_blank">Baca E-Book</a>
-                    </div>
 
-                    <div class="additional-materials">
-                        <h4>Materi Tambahan</h4>
-                        
-                        <!-- Materi 1 -->
-                        <div class="material-item">
-                            <h5>Integrasi Nasional</h5>
-                            <p>Konsep integrasi nasional dalam konteks keanekaragaman budaya:</p>
-                            <ul>
-                                <li>Pengertian integrasi nasional</li>
-                                <li>Faktor-faktor pendorong dan penghambat</li>
-                                <li>Bhinneka Tunggal Ika sebagai semboyan pemersatu</li>
-                            </ul>
-                            <a href="#" class="btn-small">Baca Selengkapnya</a>
-                        </div>
+                       <div class="materi">
+                                <button class="toggle-sumber-btn" onclick="toggleSumberMateri(this)">Lihat Sumber Materi</button>
+                                <div class="material-links ">
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/OJi2Pq024UA/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
+                                            <h4>Video Pancasila</h4>
+                                            <p>Penjelasan lengkap BAB 1 tentang Pancasila.</p>
+                                            <a href="https://youtu.be/OJi2Pq024UA" target="_blank">Tonton</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
+                                            <h4>Rangkuman BAB 1</h4>
+                                            <p>Rangkuman Materi Pancasila dari ringkasanku.com</p>
+                                            <a href="https://ringkasanku.com/materi-pancasila/" target="_blank">Baca</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/YTalH_S99-U/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
+                                            <h4>Video UUD NRI 1945</h4>
+                                            <p>Penjelasan lengkap BAB 2 tentang UUD NRI Tahun 1945.</p>
+                                            <a href="https://youtu.be/YTalH_S99-U?si=NrDqTux8QP0xLEeY" target="_blank">Tonton</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
+                                            <h4>Rangkuman BAB 2</h4>
+                                            <p>Rangkuman Demokrasi UUD 1945 dari Portal Edukasi.</p>
+                                            <a href="https://portaledukasi.org/2022/09/14/rangkuman-materi-ppkn-kelas-10-bab-2/" target="_blank">Baca</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/dJQ3i7URPPY/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
+                                            <h4>Video Materi Bhinneka Tunggal Ika</h4>
+                                            <p>Penjelasan lengkap BAB 3 tentang Bhinneka Tunggal Ika</p>
+                                            <a href="https://youtu.be/dJQ3i7URPPY?si=sI3cwCQxWxOxw22U" target="_blank">Tonton</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
+                                            <h4>Rangkuman BAB 3</h4>
+                                            <p>Rangkuman Bhinneka Tunggal Ika dari Portal Edukasi</p>
+                                            <a href="https://portaledukasi.org/2022/12/08/rangkuman-materi-ppkn-kelas-10-bab-3/" target="_blank">Baca</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
+                                            <h4>PowerPoint Materi Bhinneka Tunggal Ika</h4>
+                                            <p>PowerPoint Materi Bhinneka Tunggal Ika dari slideshow</p>
+                                            <a href="https://www.slideshare.net/slideshow/bab-3-bhinneka-kelas-10-fase-e-kurikulum-merdeka-subbab-b-pptx/274559992" target="_blank">Baca</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="https://img.youtube.com/vi/TIgBAinB3lA/hqdefault.jpg" alt="Video Materi">
+                                        <div class="hover-card-content">
+                                            <h4>Video Materi NKRI</h4>
+                                            <p>Penjelasan lengkap BAB 4 tentang NKRI</p>
+                                            <a href="https://youtu.be/TIgBAinB3lA?si=Zkl1X-ap9e5CfPfS" target="_blank">Tonton</a>
+                                        </div>
+                                    </div>
+                                    <div class="hover-card">
+                                        <img src="cover101A.png" alt="Materi Rangkuman">
+                                        <div class="hover-card-content">
+                                            <h4>Rangkuman BAB 4</h4>
+                                            <p>Rangkuman NKRI dari Portal Edukasi</p>
+                                            <a href="https://portaledukasi.org/2022/09/14/rangkuman-materi-ppkn-kelas-10-bab-2/" target="_blank">Baca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Teachers Section -->
     <section class="teachers" id="guru">
@@ -379,7 +432,7 @@
             <div class="credit-content">
                 <!-- Credit 1 -->
                 <div class="credit-item">
-                    <img src="exampleprofil.png" alt="Foto Adista" class="creator-photo" >
+                    <img src="exampleprofil.png" alt="Foto Adista" class="creator-photo">
                     <h3>Adista Nurul Fadilah (02)</h3>
                     <p class="motto">"Ballerina capucina"</p>
                     <p class="social-media">
@@ -389,7 +442,7 @@
                 
                 <!-- Credit 2 -->
                 <div class="credit-item">
-                    <img src="exampleprofil.png" alt="Foto Creator 2" class="creator-photo" >
+                    <img src="exampleprofil.png" alt="Foto Creator 2" class="creator-photo">
                     <h3>Liga Fadlian Riva'i (18)</h3>
                     <p class="motto">"Bombardilo crocodilo"</p>
                     <p class="social-media">
@@ -399,7 +452,7 @@
                 
                 <!-- Credit 3 -->
                 <div class="credit-item">
-                    <img src="exampleprofil.png" alt="Foto Creator 3" class="creator-photo" >
+                    <img src="exampleprofil.png" alt="Foto Creator 3" class="creator-photo">
                     <h3>Nikeisha Aurell Sherafina (26)</h3>
                     <p class="motto">"Tung tung sahur"</p>
                     <p class="social-media">
@@ -449,23 +502,40 @@
             navMenu.classList.toggle('active');
         }
 
-        // Fungsi untuk toggle materi dropdown
-        function toggleMateri(element) {
-            const content = element.nextElementSibling;
-            const icon = element.querySelector('.materi-icon');
-            
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                content.classList.remove('active');
-                icon.innerHTML = "▼";
-                icon.classList.remove('active');
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                content.classList.add('active');
-                icon.innerHTML = "▲";
-                icon.classList.add('active');
-            }
-        }
+function toggleSumberMateri(button) {
+    const container = button.nextElementSibling;
+    container.classList.toggle('show-sumber');
+    
+    // Update teks tombol
+    button.textContent = container.classList.contains('show-sumber') 
+        ? "Sembunyikan Sumber Materi" 
+        : "Lihat Sumber Materi";
+    
+    // Paksa update max-height materi content
+    const materiContent = button.closest('.materi-content');
+    if (materiContent.classList.contains('active')) {
+        materiContent.style.maxHeight = materiContent.scrollHeight + "px";
+    }
+}
+
+       
+// Fungsi untuk toggle materi dropdown
+function toggleMateri(element) {
+    const content = element.nextElementSibling;
+    const icon = element.querySelector('.materi-icon');
+    
+    if (content.classList.contains('active')) {
+        content.style.maxHeight = null;
+        content.classList.remove('active');
+        icon.innerHTML = "▼";
+        icon.classList.remove('active');
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.classList.add('active');
+        icon.innerHTML = "▲";
+        icon.classList.add('active');
+    }
+}
 
         // Smooth scrolling untuk navigasi
         document.addEventListener('DOMContentLoaded', function() {
