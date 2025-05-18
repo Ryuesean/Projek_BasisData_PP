@@ -1,3 +1,4 @@
+
 /* Reset dan Style Dasar */
 * {
     margin: 0;
@@ -50,11 +51,14 @@ section {
     position: sticky;
     top: 0;
     z-index: 100;
+    flex-wrap: wrap;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    flex: 1;
+    min-width: 200px;
 }
 
 .logo img {
@@ -64,15 +68,19 @@ section {
 
 .logo h1 {
     font-size: 24px;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-menu li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .nav-menu li a {
@@ -80,17 +88,38 @@ section {
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
+    font-size: 16px;
+    padding: 5px 0;
+    position: relative;
 }
 
 .nav-menu li a:hover {
     color: #F8F8F8;
-    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+.nav-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.nav-menu li a:hover::after {
+    width: 100%;
 }
 
 .menu-toggle {
     display: none;
     cursor: pointer;
     font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    padding: 5px;
 }
 
 /* Hero Section */
@@ -243,7 +272,7 @@ section {
 }
 
 .toggle-sumber-btn {
-    padding: 10px 16px;
+    padding: 10px 15px;
     background-color: #104B7F;
     color: white;
     font-weight: 600;
@@ -455,7 +484,7 @@ section {
     color: #104B7F;
 }
 
-/* Teachers Section */
+/* Teachers Section - Mobile Responsive */
 .teachers {
     background-color: #F8F8F8;
     padding: 60px 0;
@@ -526,7 +555,7 @@ section {
     transform: scale(1.2);
 }
 
-/* Credit Section */
+/* Credit Section - Mobile Responsive */
 .credit {
     background-color: #F8F8F8;
     padding: 60px 0;
@@ -621,19 +650,32 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    gap: 30px;
 }
 
 .footer-logo, .footer-links, .footer-contact {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .footer-logo {
-    max-width: 300px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-logo img {
-    height: 50px;
+    height: 125px;
     margin-bottom: 15px;
+    display: block;
+}
+
+.footer-links, .footer-contact {
+    flex: 1;
+    min-width: 200px;
 }
 
 .footer-links h3, .footer-contact h3 {
@@ -673,6 +715,7 @@ section {
 
 .footer-contact p {
     color: #ddd;
+    margin-bottom: 10px;
 }
 
 .copyright {
@@ -683,40 +726,35 @@ section {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-    .welcome-content {
-        flex-direction: column;
+    .logo h1 {
+        font-size: 22px;
     }
     
-    .stats .container {
-        flex-direction: column;
-    }
-    
-    .stat-box {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
-    .value-boxes, .feature-boxes {
-        flex-wrap: wrap;
-    }
-    
-    .value-box, .feature-box {
-        width: 45%;
-        margin-bottom: 20px;
+    .nav-menu li {
+        margin-left: 15px;
     }
 }
 
 @media (max-width: 768px) {
     .header {
-        flex-wrap: wrap;
+        padding: 10px 5%;
     }
     
-    .material-links {
-    grid-template-columns: repeat(2, 1fr);
+    .logo img {
+        height: 40px;
+    }
+    
+    .logo h1 {
+        font-size: 20px;
     }
     
     .menu-toggle {
         display: block;
+        order: 2;
+    }
+    
+    .logo {
+        order: 1;
     }
     
     .nav-menu {
@@ -724,7 +762,7 @@ section {
         width: 100%;
         flex-direction: column;
         margin-top: 15px;
-
+        order: 3;
     }
     
     .nav-menu.active {
@@ -733,8 +771,29 @@ section {
     
     .nav-menu li {
         margin: 10px 0;
+        margin-left: 0;
         text-align: center;
     }
+    
+    .nav-menu li a {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .nav-menu li a::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 18px;
+    }
+    
+    .logo img {
+        height: 35px;
+    }
+}
     
     .hero h2 {
         font-size: 36px;
@@ -748,18 +807,200 @@ section {
         width: 100%;
     }
     
-    .credit-content {
-        flex-direction: column;
+    /* Untuk resolusi HP - Teacher Section */
+/* Untuk resolusi HP - Teacher Section */
+.teacher-content {
+    flex-direction: row;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 15px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Untuk Firefox */
+}
+
+.teacher-content::-webkit-scrollbar {
+    display: none; /* Untuk Chrome/Safari */
+}
+
+.teacher-item {
+    flex: 0 0 220px; /* Lebar lebih kecil dari 280px */
+    width: 220px;
+    margin-bottom: 0;
+    padding: 15px;
+}
+
+/* Teachers Section - Horizontal Scroll for Mobile */
+.teacher-grid-container {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.teacher-grid-container::-webkit-scrollbar {
+    display: none;
+}
+
+.teacher-grid-scrollable {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px; /* Gap lebih kecil */
+    padding: 10px 15px; /* Padding disesuaikan */
+    width: max-content;
+}
+
+.teacher-grid-scrollable .teacher-card {
+    flex: 0 0 220px; /* Lebar lebih kecil */
+    width: 220px;
+    margin-bottom: 0;
+    padding: 15px;
+}
+
+/* Ukuran gambar dan font lebih kecil */
+.teacher-card img {
+    width: 100px;
+    height: 100px;
+    border-width: 3px;
+}
+
+.teacher-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.teacher-card .quote {
+    font-size: 13px;
+    min-height: 70px;
+    margin: 10px 0;
+}
+
+.social-media {
+    gap: 10px;
+}
+
+.social-media a {
+    font-size: 16px;
+}
+
+/* Untuk desktop tetap besar */
+@media (min-width: 769px) {
+    .teacher-item {
+        flex: 1;
+        width: auto;
     }
     
+    .teacher-grid-scrollable {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        width: 100%;
+        gap: 30px;
+    }
+    
+    .teacher-grid-scrollable .teacher-card {
+        width: auto;
+        flex: auto;
+        padding: 20px;
+    }
+    
+    .teacher-card img {
+        width: 150px;
+        height: 150px;
+        border-width: 5px;
+    }
+    
+    .teacher-card h3 {
+        font-size: 20px;
+    }
+    
+    .teacher-card .quote {
+        font-size: 14px;
+        min-height: 85px;
+    }
+}
+    
+    /* Untuk resolusi HP - Credit Section */
+    .credit-content {
+        flex-direction: row;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 15px;
+        -webkit-overflow-scrolling: touch; /* Untuk scrolling smooth di iOS */
+    }
+    
+    .credit-item {
+        flex: 0 0 280px; /* Lebar fixed untuk card */
+        width: 280px;
+        margin-bottom: 0;
+    }
+    
+    /* Indicator scroll horizontal */
+    .scroll-indicator {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .scroll-indicator span {
+        width: 8px;
+        height: 8px;
+        background-color: rgba(16, 75, 127, 0.3);
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    
+    .scroll-indicator span.active {
+        background-color: #104B7F;
+        width: 20px;
+        border-radius: 4px;
+    }
+    
+/* Media query untuk mobile */
+@media (max-width: 768px) {
+    /* Footer untuk mobile - horizontal scroll */
     .footer-content {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 15px;
+        -webkit-overflow-scrolling: touch; /* Untuk scrolling smooth di iOS */
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    
+    .footer-logo, .footer-links, .footer-contact {
+        flex: 0 0 280px; /* Lebar fixed untuk setiap bagian footer */
+        width: 280px;
+        padding: 15px;
+        margin-bottom: 0;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+    }
+    
+    /* Logo tetap berada di tengah dalam card footer-nya */
+    .footer-logo {
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin: 0;
     }
     
+    /* Mengatasi perubahan pada alignment center sebelumnya */
     .footer-links h3:after, .footer-contact h3:after {
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        transform: none;
+    }
+    
+    .footer-links, .footer-contact {
+        text-align: left;
+    }
+}
+
+/* Extra small devices - penyesuaian untuk footer */
+@media (max-width: 480px) {
+    .footer-logo, .footer-links, .footer-contact {
+        flex: 0 0 260px; /* Sedikit lebih kecil untuk HP sangat kecil */
+        width: 260px;
     }
 }
