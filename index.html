@@ -11,6 +11,7 @@
 <body>
     <!-- Header Section -->
     <header class="header">
+        <div class="mobile-overlay" onclick="toggleMenu()"></div>
         <div class="logo">
             <img src="LOGO PP.png" alt="LOGO PP">
             <h1>Pendidikan Pancasila</h1>
@@ -39,7 +40,7 @@
     </section>
 
     <!-- Welcome Section -->
-    <section class="welcome" id="pendahuluan">
+    <section class="welcome scroll-animate" id="pendahuluan">
         <div class="container">
             <h2>PENDAHULUAN</h2>
             <div class="welcome-content">
@@ -48,14 +49,14 @@
                     <p>Melalui pendidikan Pancasila, peserta didik diharapkan mampu menjadi warga negara yang demokratis dan bertanggung jawab, serta menjadi pribadi yang mampu mengembangkan jati diri kebangsaannya.</p>
                 </div>
                 <div class="welcome-image">
-                    <img src="garuda.png" alt="Garuda Pancasila" onerror="this.src='https://via.placeholder.com/400x300?text=Garuda+Pancasila'">
+                    <img src="garuda.png" alt="Garuda Pancasila">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Manfaat di Dunia Kerja Section -->
-    <section class="stats" id="manfaat">
+    <section class="stats scroll-animate" id="manfaat">
         <h2>Manfaat Pendidikan Pancasila di Dunia Kerja</h2>
         <div class="container">
             <div class="stat-box">
@@ -74,7 +75,7 @@
     </section>
 
     <!-- Materi PP Section -->
-    <section class="features" id="materi-pp">
+    <section class="features scroll-animate" id="materi-pp">
         <div class="container">
             <h2>MATERI PENDIDIKAN PANCASILA</h2>
             
@@ -109,7 +110,7 @@
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover10.png" alt="Materi Rangkuman">
+                                        <img src="cover10.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 1</h4>
                                             <p>Rangkuman Materi Pancasila dari Portal Edukasi.</p>
@@ -125,7 +126,7 @@
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover10.png" alt="Materi Rangkuman">
+                                        <img src="cover10.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 2</h4>
                                             <p>Rangkuman Demokrasi UUD 1945 dari Portal Edukasi.</p>
@@ -141,7 +142,7 @@
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover10.png" alt="Materi Rangkuman">
+                                        <img src="cover10.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 3</h4>
                                             <p>Rangkuman Bhinneka Tunggal Ika dari Portal Edukasi.</p>
@@ -149,7 +150,7 @@
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="ppt10.png" alt="Materi Rangkuman">
+                                        <img src="ppt10.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>PowerPoint Materi Bhinneka Tunggal Ika</h4>
                                             <p>PowerPoint Materi Bhinneka Tunggal Ika dari slideshow.</p>
@@ -165,7 +166,7 @@
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover10.png" alt="Materi Rangkuman">
+                                        <img src="cover10.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 4</h4>
                                             <p>Rangkuman NKRI dari Portal Edukasi.</p>
@@ -210,7 +211,7 @@
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover11.png" alt="Materi Rangkuman">
+                                        <img src="cover11.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 1</h4>
                                             <p>Rangkuman Materi Menjiwai Jiwa dari Portal Edukasi.</p>
@@ -226,7 +227,7 @@
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover11.png" alt="Materi Rangkuman">
+                                        <img src="cover11.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 2</h4>
                                             <p>Rangkuman Demokrasi Berdasarkan UUD NRI Tahun 1945 dari Portal Edukasi.</p>
@@ -242,7 +243,7 @@
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover11.png" alt="Materi Rangkuman">
+                                        <img src="cover11.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 3</h4>
                                             <p>Rangkuman Harmoni Dalam Keberagaman dari Portal Edukasi.</p>
@@ -258,7 +259,7 @@
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover11.png" alt="Materi Rangkuman">
+                                        <img src="cover11.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 4</h4>
                                             <p>Rangkuman Menjaga Keutuhan NKRI dari Portal Edukasi.</p>
@@ -300,12 +301,12 @@
                                         <img src="https://img.youtube.com/vi/HJrZbanc-g0/hqdefault.jpg" alt="Video Materi">
                                         <div class="hover-card-content">
                                             <h4>Video Materi BAB 1</h4>
-                                            <p>Penjelasan BAB 1 tentang Ber-Pancasila dalam Keseharian di Masyarakat.</p>
+                                            <p>Penjelasan lengkap BAB 1 tentang Ber-Pancasila dalam Keseharian di Masyarakat.</p>
                                             <a href="https://youtu.be/HJrZbanc-g0?si=Xrv0vXexmEmM6jak" target="_blank">Tonton</a>
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover12m.png" alt="Materi Rangkuman">
+                                        <img src="cover12.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 1</h4>
                                             <p>Rangkuman Materi Ber-Pancasila dalam Keseharian di Masyarakat</p>
@@ -316,12 +317,12 @@
                                         <img src="https://img.youtube.com/vi/-Fihahe9LCA/hqdefault.jpg" alt="Video Materi">
                                         <div class="hover-card-content">
                                             <h4>Video BAB 2</h4>
-                                            <p>Penjelasan BAB 2 tentang Ber-Pancasila dalam Kehidupan Global.</p>
+                                            <p>Penjelasan lengkap BAB 2 tentang Ber-Pancasila dalam Kehidupan Global.</p>
                                             <a href="https://youtu.be/-Fihahe9LCA?si=rZMQAQO984qkyLh6" target="_blank">Tonton</a>
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover12m.png" alt="Materi Rangkuman">
+                                        <img src="cover12.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 2</h4>
                                             <p>Rangkuman Ber-Pancasila dalam Kehidupan Global.</p>
@@ -332,12 +333,12 @@
                                         <img src="https://img.youtube.com/vi/X6PQRuNcKAg/hqdefault.jpg" alt="Video Materi">
                                         <div class="hover-card-content">
                                             <h4>Video Materi BAB 3</h4>
-                                            <p>Penjelasan BAB 3 tentang Kesadaran Warga Negara dalam Menghadapi Kasus Pelanggaran Hak</p>
+                                            <p>Penjelasan lengkap BAB 3 tentang Kesadaran Warga Negara dalam Menghadapi Kasus Pelanggaran Hak</p>
                                             <a href="https://youtu.be/X6PQRuNcKAg?si=P2tAGSVMD2V7LHCx" target="_blank">Tonton</a>
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover12m.png" alt="Materi Rangkuman">
+                                        <img src="cover12.jpeg" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 3</h4>
                                             <p>Rangkuman Kesadaran Warga Negara dalam Menghadapi Kasus Pelanggaran Hak</p>
@@ -348,12 +349,12 @@
                                         <img src="https://img.youtube.com/vi/InJ17fY0_z4/hqdefault.jpg" alt="Video Materi">
                                         <div class="hover-card-content">
                                             <h4>Video Materi BAB 4</h4>
-                                            <p>Penjelasan BAB 4 tentang Generasi Solutif Mengatasi Pelanggaran Hak</p>
+                                            <p>Penjelasan lengkap BAB 4 tentang Generasi Solutif Mengatasi Pelanggaran Hak</p>
                                             <a href="https://youtu.be/InJ17fY0_z4?si=JedWaW-Ls7Agz76I" target="_blank">Tonton</a>
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover12m.png" alt="Materi Rangkuman">
+                                        <img src="cover12.png" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 4</h4>
                                             <p>Rangkuman Generasi Solutif Mengatasi Pelanggaran Hak</p>
@@ -364,12 +365,12 @@
                                         <img src="https://img.youtube.com/vi/FmEd9k-1RSI/hqdefault.jpg" alt="Video Materi">
                                         <div class="hover-card-content">
                                             <h4>Video Materi BAB 5</h4>
-                                            <p>Penjelasan Bab 5 Praktik Gotong Royong dalam Kehidupan Masyarakat Indonesia</p>
+                                            <p>Penjelasan lengkap Praktik Gotong Royong dalam Kehidupan Masyarakat Indonesia</p>
                                             <a href="https://youtu.be/FmEd9k-1RSI?si=BADsJ-ghlkGvnzLX" target="_blank">Tonton</a>
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover12m.png" alt="Materi Rangkuman">
+                                        <img src="cover12.png" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 5</h4>
                                             <p>Rangkuman Praktik Gotong Royong dalam Kehidupan Masyarakat Indonesia</p>
@@ -380,12 +381,12 @@
                                         <img src="https://img.youtube.com/vi/yP2RimzzQ6E/hqdefault.jpg" alt="Video Materi">
                                         <div class="hover-card-content">
                                             <h4>Video Materi BAB 6</h4>
-                                            <p>Penjelasan BAB 6 tentang Menelusur Lembaga Negara</p>
+                                            <p>Penjelasan lengkap BAB 6 tentang Menelusur Lembaga Negara</p>
                                             <a href="https://youtu.be/yP2RimzzQ6E?si=NsWZ-J2zrGQag3fe" target="_blank">Tonton</a>
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover12m.png" alt="Materi Rangkuman">
+                                        <img src="cover12.png" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 6</h4>
                                             <p>Rangkuman Menelusur Lembaga Negara</p>
@@ -396,12 +397,12 @@
                                         <img src="https://img.youtube.com/vi/7yXGW2JNkg0/hqdefault.jpg" alt="Video Materi">
                                         <div class="hover-card-content">
                                             <h4>Video Materi BAB 7</h4>
-                                            <p>Penjelasan BAB 7 Menjadi Pelopor Pemilih Pemula dalam Demokrasi Indonesia</p>
+                                            <p>Penjelasan lengkap BAB 7 Menjadi Pelopor Pemilih Pemula dalam Demokrasi Indonesia</p>
                                             <a href="https://youtu.be/7yXGW2JNkg0?si=1Yf65Y2pJI6pn3RX" target="_blank">Tonton</a>
                                         </div>
                                     </div>
                                     <div class="hover-card">
-                                        <img src="cover12m.png" alt="Materi Rangkuman">
+                                        <img src="cover12.png" alt="Materi Rangkuman">
                                         <div class="hover-card-content">
                                             <h4>Rangkuman BAB 7</h4>
                                             <p>Rangkuman Menjadi Pelopor Pemilih Pemula dalam Demokrasi Indonesia</p>
@@ -417,7 +418,7 @@
     </section>
 
     <!-- Teachers Section -->
-    <section class="teachers" id="guru">
+    <section class="teachers scroll-animate" id="guru">
         <div class="container">
             <h2>GURU PENDIDIKAN PANCASILA</h2>
             <div class="teacher-grid">
@@ -458,15 +459,15 @@
     </section>
 
     <!-- Credit Section -->
-    <section class="credit" id="credit">
+    <section class="credit scroll-animate" id="credit">
         <div class="container">
             <h2>CREDIT</h2>
             <div class="credit-content">
                 <!-- Credit 1 -->
                 <div class="credit-item">
-                    <img src="exampleprofil.png" alt="Foto Adista" class="creator-photo">
-                    <h3>Adista Nurul Fadilah (02)</h3>
-                    <p class="motto">"Ballerina capucina"</p>
+                    <img src="adista.jpeg" alt="Foto Adista" class="creator-photo">
+                    <h3>Adista Nurul Fadilah</h3>
+                    <p class="motto">"Ubi dubium ibi libertas"</p>
                     <p class="social-media">
                         <a href="https://www.instagram.com/aisdta_" title="Instagram"><i class="fab fa-instagram"></i> @aisdta_</a>
                     </p>
@@ -474,9 +475,9 @@
                 
                 <!-- Credit 2 -->
                 <div class="credit-item">
-                    <img src="exampleprofil.png" alt="Foto Creator 2" class="creator-photo">
-                    <h3>Liga Fadlian Riva'i (18)</h3>
-                    <p class="motto">"Bombardilo crocodilo"</p>
+                    <img src="liga.jpeg" alt="Foto Creator 2" class="creator-photo">
+                    <h3>Liga Fadlian Riva'i</h3>
+                    <p class="motto">"Be Yourself"</p>
                     <p class="social-media">
                         <a href="https://www.instagram.com/lfadlianr" title="Instagram"><i class="fab fa-instagram"></i> @lfadlianr</a>
                     </p>
@@ -484,9 +485,9 @@
                 
                 <!-- Credit 3 -->
                 <div class="credit-item">
-                    <img src="exampleprofil.png" alt="Foto Creator 3" class="creator-photo">
-                    <h3>Nikeisha Aurell Sherafina (26)</h3>
-                    <p class="motto">"Tung tung sahur"</p>
+                    <img src="shera.jpeg" alt="Foto Creator 3" class="creator-photo">
+                    <h3>Nikeisha Aurell Sherafina</h3>
+                    <p class="motto">"Hǎo.. Don't give up till u meet Anime irl"</p>
                     <p class="social-media">
                         <a href="https://www.instagram.com/ryuesean" title="Instagram"><i class="fab fa-instagram"></i> @ryuesean</a>
                     </p>
@@ -527,8 +528,60 @@
             </div>
         </div>
     </footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.scroll-animate, .scroll-animate-left, .scroll-animate-right, .scroll-animate-zoom')
+        .forEach(el => observer.observe(el));
+});
+</script>
+
+
 
     <script>
+        // Fungsi untuk toggle menu pada tampilan mobile
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const overlay = document.querySelector('.mobile-overlay');
+    navMenu.classList.toggle('active');
+    overlay.classList.toggle('active');
+}
+
+// Tutup menu saat link di klik (khusus mobile)
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Hanya aktifkan jika menu sedang terbuka
+        const navMenu = document.querySelector('.nav-menu');
+        const overlay = document.querySelector('.mobile-overlay');
+        if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+    });
+});
+
+function toggleSumberMateri(button) {
+    const container = button.nextElementSibling;
+    container.classList.toggle('show-sumber');
+    
+    // Update teks tombol
+    button.textContent = container.classList.contains('show-sumber') 
+        ? "Sembunyikan Sumber Materi" 
+        : "Lihat Sumber Materi";
+    
+    // Paksa update max-height materi content
+    const materiContent = button.closest('.materi-content');
+    if (materiContent.classList.contains('active')) {
+        materiContent.style.maxHeight = materiContent.scrollHeight + "px";
+    }}
     // Fungsi untuk toggle menu pada tampilan mobile
     function toggleMenu() {
         const navMenu = document.querySelector('.nav-menu');
