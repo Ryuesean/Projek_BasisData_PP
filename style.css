@@ -61,7 +61,7 @@ section {
 }
 
 .logo img {
-    height: 50px;
+    height: 35px;
     margin-right: 10px;
 }
 
@@ -123,7 +123,7 @@ section {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(16, 75, 127, 0.208), rgba(16, 75, 127, 0.233)), url('bg1.png');
+    background-image: linear-gradient(rgba(16, 75, 127, 0.208), rgba(16, 75, 127, 0.233)), url('img/bg1.jpeg');
     color: white;
     min-height: 100vh;
     width: 100%;
@@ -728,7 +728,7 @@ section {
     .logo h1 {
         font-size: 22px;
     }
-    
+
     .nav-menu li {
         margin-left: 15px;
     }
@@ -826,7 +826,7 @@ section {
     }
 
     .logo img {
-        height: 50px;
+        height: 40px;
         margin-right: 10px;
     }
 
@@ -888,7 +888,7 @@ section {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(16, 75, 127, 0.208), rgba(16, 75, 127, 0.233)), url('bg1.png');
+    background-image: linear-gradient(rgba(16, 75, 127, 0.208), rgba(16, 75, 127, 0.233)), url('img/bg1.jpeg');
     color: white;
     min-height: 100vh;
     width: 100%;
@@ -1433,7 +1433,7 @@ section {
 }
 
 .footer-logo img {
-    height: 125px;
+    height: 225px;
     margin-bottom: 15px;
     display: block;
 }
@@ -1912,7 +1912,7 @@ section {
     }
     
     .logo img {
-        height: 35px;
+        height: 40px;
     }
 }
     
@@ -2005,7 +2005,7 @@ section {
 }
 
 /* Untuk desktop tetap besar */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .teacher-item {
         flex: 1;
         width: auto;
@@ -2040,6 +2040,81 @@ section {
     }
 }
     
+/* Perbaikan untuk tampilan mobile - Materi Section */
+@media (max-width: 768px) {
+    .materi-box {
+        margin-bottom: 15px;
+    }
+    
+    .materi-header {
+        padding: 12px 15px;
+    }
+    
+    .materi-content {
+        padding: 0 15px;
+    }
+    
+    .materi-content.active {
+        padding: 15px;
+        max-height: none;
+    }
+    
+    .toggle-sumber-btn {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+    }
+    
+    .material-links {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        gap: 15px;
+        padding: 0;
+    }
+    
+    .material-links.show-sumber {
+        padding: 10px 0;
+        max-height: none;
+    }
+    
+    .hover-card {
+        min-width: calc(50% - 10px);
+        margin-bottom: 15px;
+    }
+    
+    .hover-card img {
+        height: 120px;
+    }
+    
+    .hover-card-content h4 {
+        font-size: 16px;
+    }
+    
+    .hover-card-content a {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hover-card {
+        min-width: 100%;
+    }
+    
+    .materi-content ul {
+        padding-left: 15px;
+        font-size: 14px;
+    }
+    
+    .ebook-section h4 {
+        font-size: 16px;
+    }
+    
+    .btn-small {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
     /* Untuk resolusi HP - Credit Section */
     .credit-content {
         flex-direction: row;
